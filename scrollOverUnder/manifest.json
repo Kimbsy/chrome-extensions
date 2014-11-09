@@ -5,12 +5,6 @@
 
 	"version": "1.0",
 
-	// "icons": 
-	// {
-	// 	"48": "dislike-icon48.png",
-	// 	"128": "dislike-icon128.png"
-	// },
-
 	"content_scripts": [
 		{
 		"matches": ["http://xkcd.com/*", "http://what-if.xkcd.com/*"],
