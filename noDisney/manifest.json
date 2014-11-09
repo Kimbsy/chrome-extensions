@@ -1,0 +1,20 @@
+{
+	"manifest_version": 2,
+	"name" : "noDisney",
+	"description": "Stops Beth from watching Disney videos on my YouTube account",
+
+	"version": "1.0",
+
+	// "icons": 
+	// {
+	// 	"48": "dislike-icon48.png",
+	// 	"128": "dislike-icon128.png"
+	// },
+
+	"content_scripts": [
+		{
+		"matches": ["*://www.youtube.com/*"],
+		"js": ["js/jquery-2.1.1.js", "js/noDisney.js"]
+		}
+	]
+}

@@ -1,0 +1,34 @@
+/* so things can slide up/down */
+.turret-container {
+  overflow: hidden;
+  font-size: 20px;
+}
+
+/* position containers */
+.turret-right {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+.turret-left {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+/* set turrets offscreen */
+.turret {
+  position:relative;
+}
+.turret-right .turret {
+  top: 100px;
+}
+.turret-left .turret {
+  top: 100px;
+}
+
+/* explosion */
+.splode {
+  position: fixed;
+  font-size: 10px;
+}

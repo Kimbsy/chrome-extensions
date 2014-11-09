@@ -1,0 +1,15 @@
+{
+	"manifest_version": 2,
+	"name" : "turrets",
+	"description": "adds keyboard shortcut to masquerade",
+
+	"version": "1.0",
+
+	"content_scripts": [
+		{
+		"matches": ["<all_urls>"],
+		"js": ["js/jquery-2.1.1.js", "js/turrets.js", "js/jquery-rotate.js"],
+		"css": ["css/turrets.css"]
+		}
+	]
+}
