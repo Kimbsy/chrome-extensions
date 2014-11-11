@@ -1,0 +1,14 @@
+{
+	"manifest_version": 2,
+	"name" : "comment-block",
+	"description": "hides youtube comments",
+
+	"version": "1.0",
+
+	"content_scripts": [
+		{
+		"matches": ["https://www.youtube.com/watch*"],
+		"css": ["comment-block.css"]
+		}
+	]
+}
