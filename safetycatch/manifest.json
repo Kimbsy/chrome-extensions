@@ -1,0 +1,23 @@
+{
+	"manifest_version": 2,
+	"name" : "Safety Catch",
+	"description": "Prevents user from restoring the GODDAMN DEFAULTS ON THE FUCKING REVIEW FORM. AGAIN. AAAAARRGH",
+	"permissions": [
+		"activeTab"
+	],
+	"background": {
+    "scripts": ["safety.js"],
+    "persistent": false
+  },
+	"version": "1.0",
+	"content_scripts": [
+		{
+		"matches": ["https://*/settings/review/templates/generate/*"],
+		"js": ["jquery-2.1.1.js", "background.js", "safety.js"]
+		}
+	],
+	"browser_action": {
+	  "default_icon": "littlegun.png",
+	  "default_badge": "OFF"
+	}
+}
