@@ -1,15 +1,15 @@
 {
 	"manifest_version": 2,
-	"name" : "comment-block",
-	"description": "hides youtube comments",
+	"name" : "Comment Block",
+	"description": "Hides YouTube comments",
 
-	"version": "1.0",
+	"version": "1.2",
 
 	"content_scripts": [
 		{
 		"matches": ["https://www.youtube.com/watch*"],
-		"css": ["comment-block.css"],
-		"js": ["comment-block.js"]
+		"css": ["css/comment-block.css"],
+		"js": ["js/jquery-2.1.1.js", "js/comment-block.js"]
 		}
 	]
 }
