@@ -1,0 +1,22 @@
+{
+	"manifest_version": 2,
+	"name": "exten",
+	"description": "some description",
+
+	"version": "1.0",
+
+	// You can add i9con images if you want
+	// "icons":
+	// {
+	// 	"48": "exten-icon48.png",
+	// 	"128": "exten-icon128.png"
+	// },
+
+	"content_scripts": [
+		{
+		"matches": ["https://*.simitive.com/*"],
+		"js": ["js/jquery-2.1.1.js", "js/exten.js"],
+		"css": ["css/exten.css"]
+		}
+	]
+}
