@@ -1,0 +1,22 @@
+{
+	"manifest_version": 2,
+	"name": "regex-able-search",
+	"description": "allows in page regex searching",
+
+	"version": "1.0",
+
+	// You can add icon images if you want
+	// "icons":
+	// {
+	// 	"48": "regex-able-search-icon48.png",
+	// 	"128": "regex-able-search-icon128.png"
+	// },
+
+	"content_scripts": [
+		{
+		"matches": ["<all_urls>"],
+		"js": ["js/jquery-2.1.1.js", "js/regex-able-search.js"],
+		"css": ["css/regex-able-search.css"]
+		}
+	]
+}

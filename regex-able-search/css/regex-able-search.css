@@ -1,0 +1,15 @@
+/**
+ * CSS file to be loaded into matched pages
+ **/
+
+#regex-search-container {
+  background-color: lightblue;
+  width: 300px;
+  height: 45px;
+  float: right;
+}
+
+#regex-search-input {
+  width: 98%;
+  height: 82%;
+}
