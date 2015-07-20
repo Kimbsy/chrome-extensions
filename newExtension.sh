@@ -4,7 +4,7 @@
 # Add this function to ~/.bashrc and call from chrome-extensions directory     #
 #                                                                              #
 # Usage:                                                                       #
-#   newExt 'my-extension' 'my description of my extension'                     #
+#   newExt ['<extension_name>'] ['<description>']                     #
 #------------------------------------------------------------------------------#
 
 
