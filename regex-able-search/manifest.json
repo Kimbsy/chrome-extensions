@@ -15,7 +15,7 @@
 	"content_scripts": [
 		{
 		"matches": ["<all_urls>"],
-		"js": ["js/jquery-2.1.1.js", "js/regex-able-search.js"],
+		"js": ["js/jquery-2.1.1.js", "js/regex-able-search.js", "js/scrollIntoView.min.js"],
 		"css": ["css/regex-able-search.css"]
 		}
 	]

@@ -20,3 +20,7 @@
 .regex-match {
   background-color: yellow;
 }
+
+.regex-match.regex-match-current {
+  background-color: orange;
+}
