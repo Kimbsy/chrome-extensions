@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "octicon-names",
+  "description": "shows names of octicons on github site",
+
+  "version": "1.0",
+
+  // You can add icon images if you want
+  // "icons":
+  // {
+  //   "48": "octicon-names-icon48.png",
+  //   "128": "octicon-names-icon128.png"
+  // },
+
+  "content_scripts": [
+    {
+    "matches": ["https://octicons.github.com/"],
+    "js": ["js/jquery-2.1.1.js", "js/octicon-names.js"],
+    "css": ["css/octicon-names.css"]
+    }
+  ]
+}
