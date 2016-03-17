@@ -1,0 +1,19 @@
+/**
+ * CSS file to be loaded into matched pages
+ **/
+#header-region > div {
+    background-color: #f43059;
+}
+
+#login-container a {
+    background-color: #fff;
+    color: #f43059;
+    border: 2px solid #f43059;
+}
+
+#login-container a:hover {
+    background-color: #f43059;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
