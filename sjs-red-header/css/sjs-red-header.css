@@ -5,15 +5,17 @@
     background-color: #f43059;
 }
 
-#login-container a {
+#login-container a, button#search-submit {
     background-color: #fff;
     color: #f43059;
     border: 2px solid #f43059;
+    border-radius: 6px;
 }
 
-#login-container a:hover {
+#login-container a:hover, button#search-submit:hover {
     background-color: #f43059;
     color: #fff;
     border: 2px solid #fff;
+    border-radius: 6px;
 }
 
