@@ -1,0 +1,15 @@
+{
+    "manifest_version": 2,
+    "name": "AWS-clean-bar",
+    "description": "Shorten the names of the labels of pinned services in the AWS console top bar",
+
+    "version": "1.0",
+
+    "content_scripts": [
+        {
+        "matches": ["https://console.aws.amazon.com/*"],
+        "js": ["js/jquery-2.1.1.js", "js/AWS-clean-bar.js"],
+        "css": ["css/AWS-clean-bar.css"]
+        }
+    ]
+}
