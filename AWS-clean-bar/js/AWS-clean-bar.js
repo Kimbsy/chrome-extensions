@@ -85,4 +85,7 @@ $(document).ready(function() {
     }
   }
 
+  // Force the pin button to adjust it's position.
+  window.dispatchEvent(new Event('resize'));
+
 });
