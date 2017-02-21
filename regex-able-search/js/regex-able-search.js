@@ -17,18 +17,26 @@ $(document).ready(function() {
   // variable to store the current search string
   var currentInput = '';
 
-  // Select the text in the input apart from the first and last characters.
+  // Select the text in the input
   function selectInput() {
 
     var input = document.getElementById("regex-search-input");
-    var startPos = 1;
-    var endPos = 13;
+    var inputLength = input.value.length;
 
-    input.focus();
+    // don't select the first or last characters if the are ^ and $ respectively.
+    if (input.value.charAt(0) === '^' && input.value.charAt(inputLength - 1) === '$') {
 
-    if (typeof input.selectionStart != "undefined") {
-      input.selectionStart = startPos;
-      input.selectionEnd = endPos;
+      var startPos = 1;
+      var endPos = inputLength - 1;
+
+      input.focus();
+
+      if (typeof input.selectionStart != "undefined") {
+        input.selectionStart = startPos;
+        input.selectionEnd = endPos;
+      }
+    } else {
+      searchInput.select();
     }
   }
 
