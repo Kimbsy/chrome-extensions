@@ -17,6 +17,21 @@ $(document).ready(function() {
   // variable to store the current search string
   var currentInput = '';
 
+  // Select the text in the input apart from the first and last characters.
+  function selectInput() {
+
+    var input = document.getElementById("regex-search-input");
+    var startPos = 1;
+    var endPos = 13;
+
+    input.focus();
+
+    if (typeof input.selectionStart != "undefined") {
+      input.selectionStart = startPos;
+      input.selectionEnd = endPos;
+    }
+  }
+
   // listen for keypresses
   $(document).keydown(function(e) {
 
@@ -41,7 +56,7 @@ $(document).ready(function() {
         showing = true;
 
         // select text
-        searchInput.select();
+        selectInput();
       }
     }
 
@@ -87,7 +102,7 @@ $(document).ready(function() {
           currentInput = searchInput.val();
 
           // reselect text
-          searchInput.select();          
+          selectInput();
         }
         // find out how many matches there are
         var matches = $('.regex-match');
