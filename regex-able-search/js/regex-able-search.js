@@ -17,6 +17,29 @@ $(document).ready(function() {
   // variable to store the current search string
   var currentInput = '';
 
+  // Select the text in the input
+  function selectInput() {
+
+    var input = document.getElementById("regex-search-input");
+    var inputLength = input.value.length;
+
+    // don't select the first or last characters if the are ^ and $ respectively.
+    if (input.value.charAt(0) === '^' && input.value.charAt(inputLength - 1) === '$') {
+
+      var startPos = 1;
+      var endPos = inputLength - 1;
+
+      input.focus();
+
+      if (typeof input.selectionStart != "undefined") {
+        input.selectionStart = startPos;
+        input.selectionEnd = endPos;
+      }
+    } else {
+      searchInput.select();
+    }
+  }
+
   // listen for keypresses
   $(document).keydown(function(e) {
 
@@ -41,7 +64,7 @@ $(document).ready(function() {
         showing = true;
 
         // select text
-        searchInput.select();
+        selectInput();
       }
     }
 
@@ -87,7 +110,7 @@ $(document).ready(function() {
           currentInput = searchInput.val();
 
           // reselect text
-          searchInput.select();          
+          selectInput();
         }
         // find out how many matches there are
         var matches = $('.regex-match');

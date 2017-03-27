@@ -1,3 +1,8 @@
 /**
  * CSS file to be loaded into matched pages
  **/
+
+/* Make s3 bucket items smaller */
+.columbia-table table tbody td {
+    height: 0px !important;
+}
