@@ -2,6 +2,20 @@
  * CSS file to be loaded into matched pages
  **/
 
+/* Reduce space between pinned items */
+#awsgnav #nav-shortcutBar a {
+    padding: 7px 0px 5px !important;
+    margin: 0 3px 0 0 !important;
+}
+
+#awsgnav #nav-shortcutBar .service-link {
+    margin-left: 3px !important;
+}
+
+#awsgnav .service-link .service-label {
+    padding: 2px 0 0 1px !important;
+}
+
 /* Make s3 bucket items smaller */
 .columbia-table table tbody td {
     height: 0px !important;
