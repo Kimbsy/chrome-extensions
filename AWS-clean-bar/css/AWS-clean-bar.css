@@ -5,15 +5,28 @@
 /* Reduce space between pinned items */
 #awsgnav #nav-shortcutBar a {
     padding: 7px 0px 5px !important;
-    margin: 0 3px 0 0 !important;
+    margin: 0 3px 0 !important;
 }
 
 #awsgnav #nav-shortcutBar .service-link {
-    margin-left: 3px !important;
+    margin-left: 0 !important;
 }
 
 #awsgnav .service-link .service-label {
     padding: 2px 0 0 1px !important;
+}
+
+#awsgnav #nav-shortcutBar {
+    padding: 5px 0 !important;
+}
+
+#awsgnav #nav-servicesMenu {
+    padding: 12px 3px 11px !important;
+}
+
+/* Remove Resource Groups menu */
+#awsgnav #nav-servicesMenu, #awsgnav #nav-resourceGroupsMenu {
+    display: none !important;
 }
 
 /* Make s3 bucket items smaller */
