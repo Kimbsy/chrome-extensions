@@ -1,18 +1,9 @@
-var comic = $('#comic');
-// comic
-var text = comic.find('img').attr('title');
+$(document).ready(function() {
+    // XKCD comic
+    $('#comic').after($('#comic').find('img').attr('title'))
 
-var html = '<p>' + text + '</p>'
-
-comic.after(html);
-
-// what-if
-var illustrations = $('img.illustration');
-
-illustrations.each(function() {
-	var title = $(this).attr('title');
-	$(this).after('<p style="text-align:center;">[' + title + ']</p>');
-console.log($(this).attr('title'));
+    // XKCD what-if
+    $('img.illustration').each(function() {
+        $(this).after('<p style="text-align:center;">[' + $(this).attr('title') + ']</p>');
+    });
 });
-
-

@@ -7,7 +7,7 @@
 
 	"content_scripts": [
 		{
-		"matches": ["http://xkcd.com/*", "http://what-if.xkcd.com/*"],
+		"matches": ["https://xkcd.com/*", "https://what-if.xkcd.com/*"],
 		"js": ["js/jquery-2.1.1.js", "js/scrollOverUnder.js"]
 		}
 	]
